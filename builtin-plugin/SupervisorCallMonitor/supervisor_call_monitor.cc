@@ -79,7 +79,7 @@ void supervisor_call_monitor_register_main_app() {
   for (auto module : module_map) {
     if (strstr(module.path, main_bundle_udid)) {
       INFO_LOG("[supervisor_call_monitor] %s", module.path);
-      supervisor_call_monitor_register_image((void *)module.load_address);
+      supervisor_call_monitor_register_image((void *)module.base);
     }
   }
 }

@@ -150,7 +150,7 @@ PUBLIC int DobbyImportTableReplace(char *image_name, char *symbol_name, void *fa
     if (image_name != NULL && strstr(module.path, image_name) == NULL)
       continue;
 
-    addr_t header = (addr_t)module.load_address;
+    addr_t header = (addr_t)module.base;
     size_t slide = 0;
 
 #if 0
