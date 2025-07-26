@@ -10,7 +10,6 @@ Dobby a lightweight, multi-platform, multi-architecture exploit hook framework.
 
 ## Compile
 
-[docs/compile.md](docs/compile.md)
 
 ## Download
 
